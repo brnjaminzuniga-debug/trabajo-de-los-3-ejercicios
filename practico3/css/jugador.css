@@ -1,0 +1,40 @@
+
+.contenedor-cards {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;         
+  margin: 1%;         
+  background-color: #1a1e23; 
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  box-sizing: border-box; 
+  border: 2px solid #2d3436;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h3 {
+  color: #00ffcc;
+  font-family: sans-serif;
+  padding: 10px 15px 0 15px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  color: #a0a0a0;
+  font-family: sans-serif;
+  padding: 0 15px 15px 15px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgb(233, 228, 223);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    color: #1d4ed8;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #334155;
+}
+
+nav ul a:hover {
+    color: #2563eb;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* CONTENIDO */
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 40px;
+    
+}
+
+img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    width: 90%;
+    padding: 30px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color:rgb(18, 210, 82)
+}
+
+.hero-text p {
+    color: chocolate
+}
+
+.hero-text button:hover {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.hero-text button:{
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* 📱 MÓVIL */
+@media (max-width:576px){
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+    
+
+    .hero-text button {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/* 📱➡️💻 TABLET */
+@media (min-width:577px) and (max-width:1024px){
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text button {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/* 💻 PC */
+@media (min-width:1025px){
+    .menu-toggle {
+        display: none;
+    }
+}

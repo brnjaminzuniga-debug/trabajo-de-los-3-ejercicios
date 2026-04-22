@@ -1,0 +1,46 @@
+body {
+    background-color: #222;
+    font-family: Georgia, serif;
+}
+
+.contenedor {
+    background-color: #ddd;
+    border: 3px solid #8bc34a;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    color: #7a1c1c;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid #c44;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #7a1c1c;
+    margin-bottom: 15px;
+}
+.caja-capitulo {
+    border: 3px solid cyan;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.caja-capitulo p {
+    border: 2px solid #00bcd4;
+    padding: 10px;
+    margin: 0;
+    font-style: italic;
+}
+
+.texto {
+    color: #2e7d73;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}

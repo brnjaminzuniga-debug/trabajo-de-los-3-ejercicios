@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-rows: 80px auto 1fr 80px ;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+    grid-template-areas: "header header header"
+                         "align-left banner aside-right"
+                         "aside-left main aside-right"
+                         "aside-left content-end aside-right"
+                         "footer footer footer";
+}
+header {
+    background-color: #333;
+    grid-area: header;
+}
+.banner {
+    background-color: crimson;
+    grid-area: banner;
+}
+.aside-left{
+    background-color: blue;
+    grid-area: aside-left;
+}
+main{
+    background-color: darkgoldenrod;
+    grid-area: main;
+}
+.aside-right {
+    background-color: blueviolet;
+    grid-area: aside-right;
+}
+.content-end {
+    background-color: chartreuse;
+    grid-area: content-end;
+}
+footer{
+    background-color: aquamarine;
+    grid-area: footer;
+}
+@media (max-width: 576px) {
+    .container {
+        grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                             "banner"
+                             "aside-left"
+                             "main"
+                             "aside-right"
+                             "content-end"
+                             "footer";
+    }
+}
